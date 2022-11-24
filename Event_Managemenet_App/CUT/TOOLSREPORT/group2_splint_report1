@@ -1,0 +1,43 @@
+eve_menu.c: (in function customer_corner)
+eve_menu.c:34:8: Variable choice used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+eve_menu.c:36:3: Return value (type int) ignored: system("read a")
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+eve_menu.c:37:3: Return value (type int) ignored: system("clear")
+eve_menu.c:40:3: Return value (type int) ignored: scanf("%d", &choice)
+eve_menu.c:43:11: Return value (type int) ignored: add_cust_details()
+eve_menu.c:46:11: Return value (type int) ignored: edit_cust_details()
+eve_menu.c:49:11: Return value (type int) ignored: view_cust_details()
+eve_menu.c:52:11: Return value (type int) ignored: delete_cust_deta...
+eve_menu.c: (in function EventManager_corner)
+eve_menu.c:65:8: Variable choice used before definition
+eve_menu.c:67:3: Return value (type int) ignored: system("read a")
+eve_menu.c:68:3: Return value (type int) ignored: system("clear")
+eve_menu.c:71:3: Return value (type int) ignored: scanf("%d", &choice)
+eve_menu.c:74:11: Return value (type int) ignored: add_empersonal_d...
+eve_menu.c:77:11: Return value (type int) ignored: edit_empersonal_...
+eve_menu.c:79:11: Return value (type int) ignored: view_empersonal_...
+eve_menu.c: (in function event_corner)
+eve_menu.c:93:8: Variable choice used before definition
+eve_menu.c:95:3: Return value (type int) ignored: system("read a")
+eve_menu.c:96:3: Return value (type int) ignored: system("clear")
+eve_menu.c:99:3: Return value (type int) ignored: scanf("%d", &choice)
+eve_menu.c:102:11: Return value (type int) ignored: customer_corner()
+eve_menu.c:104:11: Return value (type int) ignored: EventManager_cor...
+eve_menu.c:106:11: Return value (type int) ignored: delete_empersona...
+eve_menu.c:108:11: Return value (type int) ignored: Maintain_reports()
+eve_menu.c:110:11: Return value (type int) ignored: event_completed_...
+eve_menu.c:112:11: Return value (type int) ignored: event_budget_ove...
+eve_menu.c:114:11: Return value (type int) ignored: successful_event...
+eve_menu.c:116:11: Return value (type int) ignored: pending_events_l...
+eve_menu.c:118:11: Return value (type int) ignored: valued_customers()
+eve_menu.c:120:12: Fall through case (no preceding break)
+  Execution falls through from the previous case (use /*@fallthrough@*/ to mark
+  fallthrough cases). (Use -casebreak to inhibit warning)
+eve_menu.c:124:2: Path with no return in function declared to return int
+  There is a path through a function declared to return a value on which there
+  is no return statement. This means the execution may fall through without
+  returning a meaningful result to the caller. (Use -noret to inhibit warning)
+
